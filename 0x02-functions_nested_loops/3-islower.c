@@ -1,24 +1,19 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
-  * print_alphabet_x10 - Make alphabet x10 times
-  *
-  * Return: void
-  */
-void print_alphabet_x10(void)
+ * _islower - Short description, single line
+ * @c: contains value to be compared
+ * Return: Always 0.
+ */
+int _islower(int c)
 {
-	char c;
-	int i = 0;
-
-	while (i <= 9)
+	if (islower(c))
 	{
-		for (c = 'a'; c <= 'z'; c++)
-		{
-			_putchar(c);
-		}
-
-		_putchar('\n');
-
-		i++;
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
